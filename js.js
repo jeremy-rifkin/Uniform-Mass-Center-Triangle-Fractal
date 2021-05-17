@@ -57,7 +57,7 @@ let c = document.getElementById("c"),
 	ctx = c.getContext("2d");
 	
 function render() {
-	let iterations = Math.ceil(Math.min(width, height) / 110);
+	let iterations = Math.min(Math.ceil(Math.min(width, height) / 110), 10);
 	console.log(iterations);
 
 	c.width = width;
